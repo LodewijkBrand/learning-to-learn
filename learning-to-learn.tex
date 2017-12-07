@@ -19,7 +19,7 @@
     \end{center}
     $$\theta_{t+1} = \theta_t - \alpha_t \nabla f(\theta_t) $$
     \begin{center}
-        $J(\theta_t)$ is a function we would like to optimize by varying $\theta_t$
+        $J(\theta_t)$ is a function we would like to minimize by varying $\theta_t$
     \end{center}
 }
 
@@ -28,9 +28,11 @@
     \begin{enumerate}
         \item Prepare Data
         \pause
-        \item Design a Model/Function You Want to Minimize
+        \item Design a Model/Function
+        \pause    
+    \item Determine the Loss Function to Minimize: $\mathcal{L}$
         \pause
-        \item Train Model (With an Optimizer!)
+        \item Train Model, With an Optimizer (Gradient Descent, SVG, ADAM, Adagrad, etc.)
         \pause
         \item Use Model
         \pause
